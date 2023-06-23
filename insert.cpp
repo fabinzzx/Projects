@@ -50,7 +50,7 @@ class insert{
     }
     void showdata(int check)
     {
-    {
+    
         if(check==1)
         {
             cout<<"Array is full!"<<endl<<"Insertion is not possible.......";
@@ -61,7 +61,6 @@ class insert{
         for(i=0;i<n;i++)
         cout<<a[i] ; 
          }
-    }
     }
 };
 int main()
