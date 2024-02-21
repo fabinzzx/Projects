@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIRTU-CARE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900">
+    <p class="bg-slate-800 text-6xl text-white text-center mt-7 p-12">
+        WELCOME TO VIRTU CARE
+    </p>
+    <div class="flex text-white text-2xl ml-8 gap-10 mt-5 ">
+        <p>File</p>
+        <p>About</p>
+        <p>Quit!</p>
+    </div>
+    <div class="border-b-4 mt-5"></div>
+    <div>
+        <p class="text-4xl text-white font-semibold text-center mt-28 bg-red-600 p-8">
+            Please Enter Your Name
+        </p>
+    </div>
+
+    <form id="nameForm" action="/submit" method="post" class="text-center"> <!-- Added class="text-center" -->
+        <div class="flex justify-center text-3xl text-blue-600 font-bold ml-3 "></div>
+        <br>
+        <label for="Name" class="sr-only">Name</label>
+        <input name="Name" type="text" autocomplete="name" required=""
+            class="mr-3 py-7 pr-10 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-3xl placeholder:text-center :text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+            placeholder="Your Name" value="">
+        
+        <!-- Submit Button -->
+        <div class="mt-8"> <!-- Added a wrapper div with margin top -->
+            <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white text-2xl font-bold py-4 px-12 rounded">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
